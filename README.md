@@ -1,0 +1,2 @@
+# STC3117_arduino
+An arduino driver for the STC3117 fuel gauge
