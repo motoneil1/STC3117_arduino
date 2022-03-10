@@ -29,7 +29,7 @@
 
 /*Battery parameters define  ------------------------------------------------------ */
 #define BATT_CAPACITY		1800	/* battery nominal capacity in mAh					*/
-#define BATT_RINT			200		/* Internal battery impedance in mOhms, 0 if unknown	*/
+#define BATT_RINT			60		/* Internal battery impedance in mOhms, 0 if unknown	*/
 
 /* New in STC3117 the OCV offset is now 2bytes per table entry*/
 #define OCV_OFFSET_TAB	{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0} // OCVTAB	(Open Circuit Voltage curve, ie when the battery is relaxed (no charge or discharge)
@@ -40,11 +40,11 @@
 #define VMODE 			MIXED_MODE	/* running mode constant, VM_MODE or MIXED_MODE	*/
 #define ALM_EN			0			/* Alarm enable constant, set at 1 to enable	*/
 #define ALM_SOC			10			/* SOC alarm in % 								*/
-#define ALM_VBAT 		2900		/* Voltage alarm in mV							*/
+#define ALM_VBAT 		2700		/* Voltage alarm in mV							*/
 #define RSENSE			100			/* sense resistor (soldered on the board) in mOhms */
 
 #define APP_EOC_CURRENT       75   		/* end charge current in mA                 */
-#define APP_CUTOFF_VOLTAGE	  2700   	/* application cut-off voltage in mV      	*/
+#define APP_CUTOFF_VOLTAGE	  2500   	/* application cut-off voltage in mV      	*/
 
 /* ******************************************************************************** */
 

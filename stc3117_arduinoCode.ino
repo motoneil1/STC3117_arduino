@@ -1199,20 +1199,23 @@ void setup() {
 
 void loop() {
 
-  // if (Serial.available() > 0){
-  //   Serial.print("\n--resetting--\n");
-  //   GasGauge_Reset();
-  // }
-
-  delay(1000);
+  delay(2000);
 
   GasGauge_Task(config1, battery1);
 
 
-  Serial << (*config1).Vmode << "\n";
-  Serial << "The voltage is " << (*battery1).Voltage << "mV\n";
+  Serial << "The Vmode is " << (*config1).Vmode << "\n";
+  Serial << "The status word is " << (*battery1).StatusWord << "\n";
+  Serial << "The HRSOC is " << (*battery1).HRSOC << "%\n";
   Serial << "The SOC is " << (*battery1).SOC << "%\n";
-  Serial << "The current is " << (*battery1).Current * 10 << "mA\n\n\n";
+  Serial << "The voltage is " << (*battery1).Voltage << "mV\n";
+  Serial << "The current is " << (*battery1).Current * 10 << "mA\n";
+  Serial << "The Temperature is " << (*battery1).Temperature / 10 << "C\n";
+  Serial << "The ConvCounter is " << (*battery1).ConvCounter << "\n";
+  Serial << "The OCV is " << (*battery1).OCV << "mV\n";
+  Serial << "The Presence is " << (*battery1).Presence << "\n";
+  Serial << "The remaining charge is " << (*battery1).ChargeValue * 10 << "mAh\n";
+  Serial << "The remaining time is " << (*battery1).RemTime * 10 << "\n\n\n";
 
 
 }
