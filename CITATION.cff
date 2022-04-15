@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Kalnins-Goode"
+  given-names: "Neil"
+- family-names: "Smith"
+  given-names: "Rhys"
+title: "STC3117_arduino"
+url: "https://github.com/motoneil1/STC3117_arduino"
